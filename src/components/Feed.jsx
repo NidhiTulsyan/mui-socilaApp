@@ -1,8 +1,18 @@
-import { Box } from '@mui/material'
+import {  Box } from '@mui/material'
 import React from 'react'
+import Post from './Post'
+
 
 export default function Feed() {
   return (
-  <Box bgcolor={'yellow'} flex={5} p={2}>feed</Box>
+  <Box flex={4} p={2}>
+ <Post />
+ <Post />
+ <Post />
+ <Post />
+ <Post />
+ 
+
+  </Box>
   )
 }
