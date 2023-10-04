@@ -59,7 +59,7 @@ export default function Navbar() {
           <Avatar
             sx={{ height: 25, width: 25 }}
             src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?size=626&ext=jpg&ga=GA1.1.1345640556.1690392149&semt=sph"
-            onClick = {e=>setOpen(true)}
+            onClick={(e) => setOpen(true)}
           />
         </Icons>
 
@@ -67,8 +67,7 @@ export default function Navbar() {
           <Avatar
             sx={{ height: 25, width: 25 }}
             src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?size=626&ext=jpg&ga=GA1.1.1345640556.1690392149&semt=sph"
-            onClick = {e=>setOpen(true)}
-
+            onClick={(e) => setOpen(true)}
           />
           <Typography variant="span">John</Typography>
         </Userbox>
@@ -78,7 +77,7 @@ export default function Navbar() {
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
         open={open}
-        onClose={e=>setOpen(false)}
+        onClose={(e) => setOpen(false)}
         anchorOrigin={{
           vertical: "top",
           horizontal: "right",
