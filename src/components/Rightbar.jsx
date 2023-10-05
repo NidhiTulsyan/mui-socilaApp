@@ -1,4 +1,4 @@
-import { Avatar, AvatarGroup, Box, Typography } from "@mui/material";
+import { Avatar, AvatarGroup, Box, ImageList, ImageListItem, Typography } from "@mui/material";
 import React from "react";
 
 export default function Rightbar() {
@@ -10,7 +10,8 @@ export default function Rightbar() {
       sx={{ display: { xs: "none", sm: "block" } }}
     >
       <Box position="fixed">
-        <Typography variant="h6" fontWeight="200">
+        <Typography variant="h6" fontWeight="300">
+        Online Friends
           <AvatarGroup max={7}>
             <Avatar alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/1.jpg" />
             <Avatar alt="Travis Howard" src="https://material-ui.com/static/images/avatar/2.jpg" />
@@ -22,6 +23,20 @@ export default function Rightbar() {
             <Avatar alt="biden chloe" src="https://material-ui.com/static/images/avatar/8.jpg" />
             <Avatar alt="amyra hawking" src="https://material-ui.com/static/images/avatar/9.jpg" />
           </AvatarGroup>
+        </Typography>
+        <Typography variant="h6" fontWeight="300">
+        Latest Photos
+        <ImageList cols={3} rowHeight={100} gap={10}>
+        <ImageListItem>
+          <img src="https://material-ui.com/static/images/image-list/breakfast.jpg" alt=""/>
+          </ImageListItem>
+        <ImageListItem>
+          <img src="https://images.unsplash.com/photo-1522770179533-24471fcdba45" alt=""/>
+          </ImageListItem>
+        <ImageListItem>
+          <img src="https://material-ui.com/static/images/image-list/burgers.jpg" alt=""/>
+          </ImageListItem>
+        </ImageList>
         </Typography>
       </Box>
     </Box>
