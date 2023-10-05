@@ -19,7 +19,7 @@ export default function Rightbar() {
             <Avatar alt="Trevor Henderson" src="https://material-ui.com/static/images/avatar/5.jpg" />
             <Avatar alt="john Henderson" src="https://material-ui.com/static/images/avatar/6.jpg" />
             <Avatar alt="Trevor hawk" src="https://material-ui.com/static/images/avatar/7.jpg" />
-            <Avatar alt="biden chloe" src="https://material-ui.com/static/images/avatar/9.jpg" />
+            <Avatar alt="biden chloe" src="https://material-ui.com/static/images/avatar/8.jpg" />
             <Avatar alt="amyra hawking" src="https://material-ui.com/static/images/avatar/9.jpg" />
           </AvatarGroup>
         </Typography>
