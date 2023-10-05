@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Avatar, AvatarGroup, Box, Typography } from "@mui/material";
 import React from "react";
 
 export default function Rightbar() {
@@ -11,7 +11,17 @@ export default function Rightbar() {
     >
       <Box position="fixed">
         <Typography variant="h6" fontWeight="200">
-          Online Friends
+          <AvatarGroup max={7}>
+            <Avatar alt="Remy Sharp" src="https://material-ui.com/static/images/avatar/1.jpg" />
+            <Avatar alt="Travis Howard" src="https://material-ui.com/static/images/avatar/2.jpg" />
+            <Avatar alt="Cindy Baker" src="https://material-ui.com/static/images/avatar/3.jpg" />
+            <Avatar alt="Agnes Walker" src="https://material-ui.com/static/images/avatar/4.jpg" />
+            <Avatar alt="Trevor Henderson" src="https://material-ui.com/static/images/avatar/5.jpg" />
+            <Avatar alt="john Henderson" src="https://material-ui.com/static/images/avatar/6.jpg" />
+            <Avatar alt="Trevor hawk" src="https://material-ui.com/static/images/avatar/7.jpg" />
+            <Avatar alt="biden chloe" src="https://material-ui.com/static/images/avatar/9.jpg" />
+            <Avatar alt="amyra hawking" src="https://material-ui.com/static/images/avatar/9.jpg" />
+          </AvatarGroup>
         </Typography>
       </Box>
     </Box>
