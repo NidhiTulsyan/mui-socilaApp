@@ -4,12 +4,12 @@ import React from "react";
 
 export default function Add() {
   return (
-    <div>
-      <Tooltip title="Add">
-        <Fab sx={{ color: "blue" }} aria-label="add">
-          <AddIcon sx={{ color: "blue" }} />
+    <>
+      <Tooltip title="Add" sx={{position:'fixed',bottom:20,left:30}}>
+        <Fab color="primary" aria-label="add">
+          <AddIcon  />
         </Fab>
       </Tooltip>
-    </div>
+    </>
   );
 }
