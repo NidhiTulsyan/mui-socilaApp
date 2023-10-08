@@ -49,15 +49,15 @@ export default function Add() {
               sx={{ width: 30, height: 30 }}
             />
             <Typography variant="span" fontWeight={400}> Trevor Henderson</Typography>
+          </UserBox>
             <TextField
           id="standard-multiline-static"
-          label="Multiline"
+          sx={{width:"100%"}}
           multiline
-          rows={4}
-          defaultValue="Default Value"
+          rows={3}
+          placeholder="What's on your mind"
           variant="standard"
         />
-          </UserBox>
         </Box>
       </StyledModal>
     </>
