@@ -8,7 +8,7 @@ import Add from "./components/Add";
 
 
 export default function App() {
-  const [mode,setmode] = useState("light")
+  const [mode,setmode] = useState("dark")
 const DarkTheme = createTheme({
   palette:{
     mode:mode
@@ -16,7 +16,7 @@ const DarkTheme = createTheme({
 })
   return (
     <ThemeProvider theme={DarkTheme}>
-    <Box>
+    <Box bgcolor={"background.default"} color={"text.primary"}>
       <Navbar />
       <Stack direction="row" justifyContent="space-between" spacing={2}>
         <Sidebar />

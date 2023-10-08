@@ -54,7 +54,7 @@ export default function Add() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box height={280} width={400} borderRadius={5} bgcolor={"white"} p={2}>
+        <Box height={280} width={400} borderRadius={5} bgcolor={"background.default"} color={"text.primary"} p={2}>
           <Typography variant="h6" color={"gray"} textAlign={"center"}>
             Create Post
           </Typography>
