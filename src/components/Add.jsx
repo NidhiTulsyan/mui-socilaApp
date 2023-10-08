@@ -1,5 +1,9 @@
-import { Avatar, Box, Fab, Modal, TextField, Tooltip, Typography } from "@mui/material";
+import { Avatar, Box, Fab, Modal, Stack, TextField, Tooltip, Typography } from "@mui/material";
 import { Add as AddIcon } from "@mui/icons-material";
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
+import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
+import VideoCameraBackIcon from '@mui/icons-material/VideoCameraBack';
+import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import React, { useState } from "react";
 import styled from "@emotion/styled";
 
@@ -58,6 +62,9 @@ export default function Add() {
           placeholder="What's on your mind"
           variant="standard"
         />
+        <Stack>
+
+        </Stack>
         </Box>
       </StyledModal>
     </>
