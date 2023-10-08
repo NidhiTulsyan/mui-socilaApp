@@ -62,7 +62,11 @@ export default function Add() {
           placeholder="What's on your mind"
           variant="standard"
         />
-        <Stack>
+        <Stack gap={2} mt={3} mb={3} direction={"row"}>
+        <EmojiEmotionsIcon color="primary"/>
+        <AddPhotoAlternateIcon color="secondary"/>
+        <VideoCameraBackIcon color="success"/>
+        <PersonAddIcon color="error"/>
 
         </Stack>
         </Box>
