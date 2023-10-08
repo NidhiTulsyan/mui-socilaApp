@@ -1,11 +1,13 @@
 import { Box, Fab, Modal, Tooltip, Typography } from "@mui/material";
 import { Add as AddIcon } from "@mui/icons-material";
-import React from "react";
+import React, { useState } from "react";
 
 export default function Add() {
+  const [open , setopen] = useState(false);
   return (
     <>
       <Tooltip
+      onClick={e=>setopen(true)}
         title="Add"
         sx={{
           position: "fixed",
@@ -19,11 +21,11 @@ export default function Add() {
       </Tooltip>
       <Modal
   open={open}
-  onClose={handleClose}
+  onClose={e=>setopen(false)}
   aria-labelledby="modal-modal-title"
   aria-describedby="modal-modal-description"
 >
-  <Box sx={style}>
+  <Box >
     <Typography id="modal-modal-title" variant="h6" component="h2">
       Text in a modal
     </Typography>
