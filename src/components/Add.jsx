@@ -31,8 +31,8 @@ export default function Add() {
   aria-labelledby="modal-modal-title"
   aria-describedby="modal-modal-description"
 >
-  <Box height={280} width={400} borderRadius={4} bgcolor={"white"} p={2}>
-    hello
+  <Box height={280} width={400} borderRadius={5} bgcolor={"white"} p={2}>
+ <Typography variant="h6" color={"gray"}>Create Post</Typography>
   </Box>
 </StyledModal>
     </>
