@@ -1,9 +1,21 @@
-import { Avatar, Box, Fab, Modal, Stack, TextField, Tooltip, Typography } from "@mui/material";
+import {
+  Avatar,
+  Box,
+  Button,
+  ButtonGroup,
+  Fab,
+  Modal,
+  Stack,
+  TextField,
+  Tooltip,
+  Typography,
+} from "@mui/material";
 import { Add as AddIcon } from "@mui/icons-material";
-import PersonAddIcon from '@mui/icons-material/PersonAdd';
-import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
-import VideoCameraBackIcon from '@mui/icons-material/VideoCameraBack';
-import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
+import PersonAddIcon from "@mui/icons-material/PersonAdd";
+import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
+import VideoCameraBackIcon from "@mui/icons-material/VideoCameraBack";
+import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
+import DateRangeIcon from "@mui/icons-material/DateRange";
 import React, { useState } from "react";
 import styled from "@emotion/styled";
 
@@ -16,8 +28,8 @@ const StyledModal = styled(Modal)({
 const UserBox = styled(Box)({
   display: "flex",
   alignItems: "center",
-  gap:"10px",
-  marginBottom:"20px"
+  gap: "10px",
+  marginBottom: "20px",
 });
 export default function Add() {
   const [open, setopen] = useState(false);
@@ -52,23 +64,35 @@ export default function Add() {
               src="https://material-ui.com/static/images/avatar/5.jpg"
               sx={{ width: 30, height: 30 }}
             />
-            <Typography variant="span" fontWeight={400}> Trevor Henderson</Typography>
+            <Typography variant="span" fontWeight={400}>
+              {" "}
+              Trevor Henderson
+            </Typography>
           </UserBox>
-            <TextField
-          id="standard-multiline-static"
-          sx={{width:"100%"}}
-          multiline
-          rows={3}
-          placeholder="What's on your mind"
-          variant="standard"
-        />
-        <Stack gap={2} mt={3} mb={3} direction={"row"}>
-        <EmojiEmotionsIcon color="primary"/>
-        <AddPhotoAlternateIcon color="secondary"/>
-        <VideoCameraBackIcon color="success"/>
-        <PersonAddIcon color="error"/>
-
-        </Stack>
+          <TextField
+            id="standard-multiline-static"
+            sx={{ width: "100%" }}
+            multiline
+            rows={3}
+            placeholder="What's on your mind"
+            variant="standard"
+          />
+          <Stack gap={2} mt={3} mb={3} direction={"row"}>
+            <EmojiEmotionsIcon color="primary" />
+            <AddPhotoAlternateIcon color="secondary" />
+            <VideoCameraBackIcon color="success" />
+            <PersonAddIcon color="error" />
+          </Stack>
+          <ButtonGroup
+            fullWidth
+            variant="contained"
+            aria-label="outlined primary button group"
+          >
+            <Button>Post</Button>
+            <Button  sx={{width:'100px'}}>
+              <DateRangeIcon />
+            </Button>
+          </ButtonGroup>
         </Box>
       </StyledModal>
     </>
