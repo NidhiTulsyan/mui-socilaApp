@@ -1,7 +1,13 @@
 import { Box, Fab, Modal, Tooltip, Typography } from "@mui/material";
 import { Add as AddIcon } from "@mui/icons-material";
 import React, { useState } from "react";
+import styled from "@emotion/styled";
 
+const StyledModal = styled(Modal)({
+  display:"flex",
+  alignItems:"center",
+  justifyContent:"center"
+})
 export default function Add() {
   const [open , setopen] = useState(false);
   return (
@@ -19,21 +25,16 @@ export default function Add() {
           <AddIcon />
         </Fab>
       </Tooltip>
-      <Modal
+      <StyledModal
   open={open}
   onClose={e=>setopen(false)}
   aria-labelledby="modal-modal-title"
   aria-describedby="modal-modal-description"
 >
-  <Box >
-    <Typography id="modal-modal-title" variant="h6" component="h2">
-      Text in a modal
-    </Typography>
-    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-      Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-    </Typography>
+  <Box height={280} width={400} borderRadius={4} bgcolor={"white"} p={2}>
+    hello
   </Box>
-</Modal>
+</StyledModal>
     </>
   );
 }
