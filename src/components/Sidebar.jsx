@@ -16,7 +16,7 @@ import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import SettingsIcon from "@mui/icons-material/Settings";
 import NightlightIcon from "@mui/icons-material/Nightlight";
 
-export default function Sidebar() {
+export default function Sidebar({mode,setmode}) {
   return (
     <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
       <Box position="fixed">
@@ -80,7 +80,7 @@ export default function Sidebar() {
               <ListItemIcon>
                 <NightlightIcon />
               </ListItemIcon>
-              <Switch />
+              <Switch onChange={e=>setmode(mode === "light" ? "dark" :"light")}/>
             </ListItemButton>
           </ListItem>
         </List>

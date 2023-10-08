@@ -19,7 +19,7 @@ const DarkTheme = createTheme({
     <Box bgcolor={"background.default"} color={"text.primary"}>
       <Navbar />
       <Stack direction="row" justifyContent="space-between" spacing={2}>
-        <Sidebar />
+        <Sidebar mode={mode} setmode={setmode}/>
         <Feed />
         <Rightbar />
       </Stack>
