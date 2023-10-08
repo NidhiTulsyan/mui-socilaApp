@@ -1,4 +1,4 @@
-import { Avatar, Box, Fab, Modal, Tooltip, Typography } from "@mui/material";
+import { Avatar, Box, Fab, Modal, TextField, Tooltip, Typography } from "@mui/material";
 import { Add as AddIcon } from "@mui/icons-material";
 import React, { useState } from "react";
 import styled from "@emotion/styled";
@@ -49,6 +49,14 @@ export default function Add() {
               sx={{ width: 30, height: 30 }}
             />
             <Typography variant="span" fontWeight={400}> Trevor Henderson</Typography>
+            <TextField
+          id="standard-multiline-static"
+          label="Multiline"
+          multiline
+          rows={4}
+          defaultValue="Default Value"
+          variant="standard"
+        />
           </UserBox>
         </Box>
       </StyledModal>
