@@ -8,6 +8,12 @@ const StyledModal = styled(Modal)({
   alignItems:"center",
   justifyContent:"center"
 })
+
+const UserBox = styled(Box)({
+  display:"flex",
+  alignItems:"center",
+ 
+})
 export default function Add() {
   const [open , setopen] = useState(false);
   return (
@@ -32,7 +38,7 @@ export default function Add() {
   aria-describedby="modal-modal-description"
 >
   <Box height={280} width={400} borderRadius={5} bgcolor={"white"} p={2}>
- <Typography variant="h6" color={"gray"}>Create Post</Typography>
+ <Typography variant="h6" color={"gray"} textAlign={"center"}>Create Post</Typography>
   </Box>
 </StyledModal>
     </>
